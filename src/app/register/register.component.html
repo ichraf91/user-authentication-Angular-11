@@ -53,6 +53,22 @@
         </div>
       </div>
       <div class="form-group">
+        <label for="role">Role</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" id="admin" value="admin" [(ngModel)]="form.role" name="role">
+          <label class="form-check-label" for="admin">Admin</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" id="moderator" value="mod" [(ngModel)]="form.role" name="role">
+          <label class="form-check-label" for="moderator">Moderator</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" id="user" value="user" [(ngModel)]="form.role" name="role" checked>
+          <label class="form-check-label" for="user">User</label>
+        </div>
+      </div>
+
+      <div class="form-group">
         <label for="password">Password</label>
         <input
           type="password"
@@ -70,6 +86,7 @@
           </div>
         </div>
       </div>
+
       <div class="form-group">
         <button class="btn btn-primary btn-block">Sign Up</button>
       </div>
