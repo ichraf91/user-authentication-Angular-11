@@ -1,0 +1,46 @@
+<div>
+  <h2>Recommendation</h2>
+
+  <div>
+    <label>Nitrogen:</label>
+    <input type="text" [(ngModel)]="nitrogen" name="Nitrogen">
+  </div>
+
+  <div>
+    <label>Phosporus:</label>
+    <input type="text" [(ngModel)]="phosporus">
+  </div>
+
+  <div>
+    <label>Potassium:</label>
+    <input type="text" [(ngModel)]="potassium">
+  </div>
+
+  <div>
+    <label>Temperature:</label>
+    <input type="text" [(ngModel)]="temperature">
+  </div>
+
+  <div>
+    <label>Humidity:</label>
+    <input type="text" [(ngModel)]="humidity">
+  </div>
+
+  <div>
+    <label>pH:</label>
+    <input type="text" [(ngModel)]="ph">
+  </div>
+
+  <div>
+    <label>Rainfall:</label>
+    <input type="text" [(ngModel)]="rainfall">
+  </div>
+
+  <button (click)="predictCrop()">Predict Crop</button>
+
+  <div *ngIf="prediction">
+    <p>{{ prediction }}</p>
+  </div>
+</div>
+
+
