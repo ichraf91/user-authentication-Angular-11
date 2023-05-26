@@ -14,6 +14,7 @@ import { BoardModeratorComponent } from './board-moderator/board-moderator.compo
 import { BoardUserComponent } from './board-user/board-user.component';
 import { authInterceptorProviders } from './_helpers/auth.interceptor';
 import { RecommendationComponent } from './board-user/recommendation/recommendation.component';
+import { PredictionComponent } from './board-user/prediction/prediction.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { RecommendationComponent } from './board-user/recommendation/recommendat
     BoardAdminComponent,
     BoardModeratorComponent,
     BoardUserComponent,
-    RecommendationComponent
+    RecommendationComponent,
+    PredictionComponent
   ],
   imports: [
     BrowserModule,

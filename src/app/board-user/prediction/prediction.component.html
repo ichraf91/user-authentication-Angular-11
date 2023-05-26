@@ -1,0 +1,11 @@
+<div *ngIf="htmlContent">
+  <div [innerHTML]="htmlContent"></div>
+</div>
+<iframe [srcdoc]="htmlContent" width="100%" height="500px"></iframe>
+
+<input type="file" (change)="onImageSelected($event)">
+<button (click)="onSubmit()">Predict</button>
+<div *ngIf="htmlContent">
+  <h2>Prediction Result: {{ htmlContent }}</h2>
+  <img *ngIf="soilImage" [src]="soilImage" alt="Soil Image">
+</div>
